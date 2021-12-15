@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圣杯布局</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            border: 0;
+        }
+        .all{
+            background: pink;
+            height: 100vh;  /*vh把我们的浏览器等分为100分 可写到1-100 写100就沾满整个浏览器*/
+            display: flex;
+            flex-direction: column;
+        }
+        .top,.bottom{
+            height: 50px;
+            background: skyblue;
+        }
+        .middle{
+            display: flex;
+            background: gold;
+            flex:1
+        }
+        .middle div:nth-child(1){
+            background: #0F0;
+            width: 150px;
+        }
+        .middle div:nth-child(3){
+            background: #0F0;
+            width: 150px;
+        }
+        .middle div:nth-child(2){
+            background:darkorange;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="top">头部</div>
+        <div class="middle">
+            <div>左</div>
+            <div>中</div>
+            <div>右</div>
+        </div>
+        <div class="bottom">底部</div>
+    </div>
+</body>
+</html>

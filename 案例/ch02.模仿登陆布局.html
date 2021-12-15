@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模仿登陆布局</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="../bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../bootstrap-3.3.7/dist/css/bootstrap.min.css">
+    <style>
+        
+        .top{
+            display: flex;
+            height: 34px;
+            justify-content: center
+        }
+        .p1{
+            text-align: right;
+        }
+        .img{
+            width: 100px;
+            height: 100px;
+            margin:0 auto;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="top">
+            <p><img src="../img/submit.jpg"></p>
+            <div class="form-group">
+            <input type="text" class="form-control" placeholder="请输入搜索内容">
+            </div>
+            <button type="submit" class="btn btn-default" style="background: greenyellow;">搜索</button>
+        </div>
+        <div class="img">
+            <img src="../img/QQ.jpg" style="width: 100px;height: 100px;">
+        </div>
+        <div>
+            <div class="form-group has-feedback">
+                <input type="text" class="form-control" name="adminName" placeholder="用户名">
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" class="form-control" name="password" placeholder="密码">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-flat" style="margin:10px 0 10px 0">登录</button>
+            <p class="p1"><a href="#">忘记密码</a></p>
+        </div>
+    </div>
+</body>
+</html>

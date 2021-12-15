@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模仿携程部分页面</title>
+    <style>
+        body {
+            width: 540px;
+            margin: 0 auto;
+            
+        }
+
+        a {
+            line-height: 45px;
+            text-decoration: none;
+            color: #FFF;
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid white;
+            border-top:  1px solid white;
+            
+        }
+        .header img {
+            width: 100%;
+        }
+
+        .row {
+            width: 100%;
+            height: 90px;
+            background: #FF697A;
+            border-radius: 9px;
+            margin-top: 5px;
+            display: flex;
+            
+        }
+
+        .row:nth-child(2) {
+            background: #3D98FF;
+        }
+
+        .row:nth-child(3) {
+            background: #44C522;
+        }
+
+        .row:nth-child(4) {
+            background: #FC9720;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            /* width: 180px; */
+            flex:1
+        }
+   
+   
+   
+    </style>
+</head>
+
+<body>
+    <!-- FF697A
+        3D98FF
+        44C522
+        FC9720 -->
+    <div class="header">
+        <img src="../img/ctrip.jpg" alt="">
+    </div>
+    <!-- 内容 -->
+    <div class="nav">
+        <div class="row">
+            <div class="col"><a href="#">酒店</a></div>
+            <div class="col">
+                <a href="#">海外酒店</a>
+                <a href="#">特价酒店</a>
+            </div>
+            <div class="col">
+                <a href="#">团购</a>
+                <a href="#">民宿客栈</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><a href="#">旅游</a></div>
+            <div class="col">
+                <a href="#">火车票</a>
+                <a href="#">特价机票</a>
+            </div>
+            <div class="col">
+                <a href="#">汽车票船票</a>
+                <a href="#">专车租车</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><a href="#">旅游</a></div>
+            <div class="col">
+                <a href="#">门票</a>
+                <a href="#">目的地攻略</a>
+            </div>
+            <div class="col">
+                <a href="#">邮轮旅行</a>
+                <a href="#">定制旅行</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="#">携程网</a>
+                <a href="#">Ctrip</a>
+            </div>
+            <div class="col">
+                <a href="#">携程网</a>
+                <a href="#">Ctrip</a>
+            </div>
+            <div class="col">
+                <a href="#">携程网</a>
+                <a href="#">Ctrip</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>
